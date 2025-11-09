@@ -15,7 +15,7 @@ const entradas = {
     titulo: "Ruta en coche por la Toscana",
     meta: "Toscana, Italia · Mayo 2024",
     imagen:
-      "https://images.unsplash.com/photo-1500534314211-0a24cd03f2c0?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80",
     parrafos: [
       "Conducir por la Toscana permite ver colinas, viñedos y pueblos en lo alto de pequeñas montañas.",
       "La ruta puede incluir Florencia, Siena, San Gimignano y Montepulciano. En cada zona hay plazas, iglesias y pequeños restaurantes familiares.",

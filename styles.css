@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Contenedor central fijo: solo escritorio */
+/* Contenedor central fijo */
 .contenedor {
   width: 1000px;
   margin: 0 auto;
