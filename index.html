@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de viajes</title>
+
+  <!-- Fuente sencilla de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- CABECERA -->
+  <header class="cabecera">
+    <div class="contenedor cabecera-contenido">
+      <div class="logo">
+        <span class="logo-icono">✈️</span>
+        <span class="logo-texto">Blog de viajes</span>
+      </div>
+
+      <!-- Menú fijo, solo escritorio -->
+      <nav class="navegacion">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#consejos">Consejos</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO / PRESENTACIÓN -->
+    <section class="hero">
+      <div class="contenedor hero-contenido">
+        <div class="hero-texto">
+          <h1>Tu próximo viaje empieza en esta página</h1>
+          <p>
+            Este es un pequeño blog de ejemplo creado con HTML, CSS y
+            JavaScript. Aquí se muestran algunos destinos, consejos y una
+            breve explicación del proyecto.
+          </p>
+          <a href="#destinos" class="boton boton-principal">Ver entradas</a>
+        </div>
+        <div class="hero-imagen">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+            alt="Maleta y avión"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA DE ENTRADAS -->
+    <section id="destinos" class="seccion">
+      <div class="contenedor">
+        <h2>Entradas del blog</h2>
+        <p class="seccion-descripcion">
+          Haz clic en cualquiera de las entradas para ver el contenido completo.
+        </p>
+
+        <div class="blog-layout">
+          <!-- Tarjetas de entradas (columna izquierda) -->
+          <div class="lista-entradas">
+            <article class="tarjeta-entrada" data-id="1">
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                alt="Templo en Kyoto"
+              />
+              <div class="tarjeta-texto">
+                <h3>Kyoto en otoño</h3>
+                <p class="meta">Kyoto, Japón · Octubre 2025</p>
+                <p class="resumen">
+                  Templos, hojas rojas y paseos tranquilos por uno de los
+                  destinos más bonitos de Japón.
+                </p>
+                <button class="boton boton-secundario ver-entrada">
+                  Leer más
+                </button>
+              </div>
+            </article>
+
+            <article class="tarjeta-entrada" data-id="2">
+              <img
+                src="https://images.unsplash.com/photo-1500534314211-0a24cd03f2c0?auto=format&fit=crop&w=600&q=80"
+                alt="Paisaje de la Toscana"
+              />
+              <div class="tarjeta-texto">
+                <h3>Ruta en coche por la Toscana</h3>
+                <p class="meta">Toscana, Italia · Mayo 2024</p>
+                <p class="resumen">
+                  Colinas verdes, pueblos medievales y muchos platos de pasta
+                  casera.
+                </p>
+                <button class="boton boton-secundario ver-entrada">
+                  Leer más
+                </button>
+              </div>
+            </article>
+
+            <article class="tarjeta-entrada" data-id="3">
+              <img
+                src="https://images.unsplash.com/photo-1541417904950-b855846fe074?auto=format&fit=crop&w=600&q=80"
+                alt="Playa en Canarias"
+              />
+              <div class="tarjeta-texto">
+                <h3>Invierno suave en Canarias</h3>
+                <p class="meta">Islas Canarias, España · Enero 2025</p>
+                <p class="resumen">
+                  Sol, senderismo y playas volcánicas para escapar del frío.
+                </p>
+                <button class="boton boton-secundario ver-entrada">
+                  Leer más
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Zona de lectura (columna derecha) -->
+          <article class="entrada-completa" id="entrada-completa">
+            <h3 id="entrada-titulo">Selecciona una entrada</h3>
+            <p class="meta" id="entrada-meta">
+              Haz clic en cualquiera de las tarjetas de la izquierda.
+            </p>
+            <img
+              id="entrada-imagen"
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+              alt=""
+              class="entrada-imagen oculto"
+            />
+            <div id="entrada-contenido">
+              <p>
+                Cuando pulses en "Leer más" en cualquiera de las entradas,
+                el contenido completo se cargará en este recuadro sin
+                recargar la página. Esta parte es la que se realiza con
+                JavaScript manejando el DOM.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSEJOS -->
+    <section id="consejos" class="seccion seccion-suave">
+      <div class="contenedor">
+        <h2>Consejos básicos de viaje</h2>
+
+        <div class="consejos-grid">
+          <div class="consejo">
+            <h3>Viaja ligero</h3>
+            <p>
+              Si es posible, lleva solo equipaje de mano. Es más cómodo y
+              casi siempre suficiente para escapadas cortas.
+            </p>
+          </div>
+          <div class="consejo">
+            <h3>Mapas fuera de línea</h3>
+            <p>
+              Descarga mapas en tu móvil antes de salir. Te servirán incluso
+              sin cobertura.
+            </p>
+          </div>
+          <div class="consejo">
+            <h3>Seguro de viaje</h3>
+            <p>
+              Comprueba que tienes cobertura médica adecuada, sobre todo si
+              viajas fuera de Europa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ / SOBRE EL PROYECTO -->
+    <section id="sobre-mi" class="seccion">
+      <div class="contenedor sobre-mi">
+        <div>
+          <h2>Sobre este blog</h2>
+          <p>
+            Esta página se ha creado como ejercicio para practicar
+            desarrollo web básico en el lado del cliente.
+          </p>
+          <p>
+            Todo el código se ha escrito a mano utilizando HTML para la
+            estructura, CSS para los estilos y JavaScript para añadir
+            interactividad sencilla.
+          </p>
+        </div>
+        <div>
+          <h3>Tecnologías utilizadas</h3>
+          <ul>
+            <li>HTML5 para la estructura semántica.</li>
+            <li>CSS3 para el diseño y la maquetación.</li>
+            <li>JavaScript para actualizar el contenido sin recargar.</li>
+            <li>GitHub Pages para el despliegue estático.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p>
+        &copy; <span id="anio"></span> Blog de viajes – Ejemplo de aplicación
+        web estática.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
